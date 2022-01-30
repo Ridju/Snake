@@ -1,0 +1,42 @@
+body { 
+    background-color: lightgray;
+    padding-top: 50px;
+}
+
+.gridContainer { 
+    display: grid;
+    max-width: 320px;
+    grid-template-columns: repeat(4, 1fr);
+    border: solid 1px gray;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.headingContainer { 
+    grid-column: 1 / span 4;
+}
+
+.canvasContainer { 
+    grid-column: 1 / span 4;
+}
+
+.reloadBtnContainer { 
+    grid-column: 1 / span 2;
+}
+
+.center { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameOverContainer { 
+    grid-column: 1 / span 4;
+    color: red;
+    font-weight: 800;
+}
+
+.scoreContainer { 
+    grid-column: 3 / span 2;
+}
