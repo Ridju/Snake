@@ -1,42 +1,71 @@
-body { 
-    background-color: lightgray;
-    padding-top: 50px;
+body {
+  background-color: lightgray;
+  padding-top: 50px;
 }
 
-.gridContainer { 
-    display: grid;
-    max-width: 320px;
-    grid-template-columns: repeat(4, 1fr);
-    border: solid 1px gray;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: white;
+.gridContainer {
+  display: grid;
+  max-width: 320px;
+  grid-template-columns: repeat(4, 1fr);
+  border: solid 1px gray;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
 }
 
-.headingContainer { 
-    grid-column: 1 / span 4;
+.headingContainer {
+  grid-column: 1 / span 4;
 }
 
-.canvasContainer { 
-    grid-column: 1 / span 4;
+.canvasContainer {
+  grid-column: 1 / span 4;
 }
 
-.reloadBtnContainer { 
-    grid-column: 1 / span 2;
+.reloadBtnContainer {
+  grid-column: 1 / span 2;
 }
 
-.center { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.gameOverContainer { 
-    grid-column: 1 / span 4;
-    color: red;
-    font-weight: 800;
+.gameOverContainer {
+  grid-column: 1 / span 4;
+  color: red;
+  font-weight: 800;
 }
 
-.scoreContainer { 
-    grid-column: 3 / span 2;
+.scoreContainer {
+  grid-column: 3 / span 2;
+}
+
+.controlsContainer {
+  grid-column: 1 / -1;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.red {
+  background-color: red;
+}
+
+.square {
+  height: 20px;
+  width: 20px;
+}
+
+.square.red {
+  margin-left: 10px;
+}
+
+.elementContainer {
+  display: flex;
 }

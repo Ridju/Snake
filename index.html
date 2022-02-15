@@ -1,31 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snake Game</title>
-    <link rel="stylesheet" type="text/css" href="styles/main.css" media="screen" />
-    <script type="module" src="scripts/index.mjs" defer ></script>
-</head>
-<body class="center">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="styles/main.css"
+      media="screen"
+    />
+    <script type="module" src="scripts/index.mjs" defer></script>
+  </head>
+  <body class="center">
     <div class="gridContainer">
-        <div class="headingContainer center">
-            <h1 class="heading">Snake</h1>
+      <div class="headingContainer center">
+        <h1 class="heading">Snake</h1>
+      </div>
+      <div class="gameOverContainer center">
+        <p id="gameOver">Game Over</p>
+      </div>
+      <div class="reloadBtnContainer center">
+        <button id="reloadBtn">Reload Game</button>
+      </div>
+      <div class="scoreContainer center">
+        <p>Score:</p>
+        <p id="points">0</p>
+      </div>
+      <div class="canvasContainer">
+        <canvas class="icanvas" id="icanvas" width="640" height="180"></canvas>
+      </div>
+      <div class="controlsContainer">
+        <span class="bold">Controls:</span> W: Up, S: down, A: left, D: right
+        <div class="elementContainer">
+          <div class="yellow square"></div>
+          : snake
+          <div class="red square"></div>
+          : food
         </div>
-        <div class="gameOverContainer center">
-            <p id="gameOver">Game Over</p>
-        </div>
-        <div class="reloadBtnContainer center">
-            <button id="reloadBtn">Reload Game</button>
-        </div>
-        <div class="scoreContainer center">
-            <p>Score: </p>
-            <p id="points">0</p>
-        </div>
-        <div class="canvasContainer">
-            <canvas class="icanvas" id="icanvas" width="640" height="180"></canvas>
-        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
